@@ -1,0 +1,134 @@
+[
+  {
+    "id": 201,
+    "tytul": "Secret Of The Mimic",
+    "typ": "Game",
+    "data_premiery": "lata 70/80",
+    "opis_krotki": "Sekret mimika",
+    "poster_url": "assets/posters/sw/acolyte.jpg",
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/series/the-acolyte/57isdbcyG9HA",
+    "scena_ikoniczna_url": "assets/scenes/sw/acolyte_bg.jpg",
+    "watched": false
+  },
+  {
+    "id": 202,
+    "tytul": "Five Nights at Freddy's 4",
+    "typ": "Game",
+    "data_premiery": "1983",
+    "opis_krotki": "Was that the bite of '87?",
+    "poster_url": "assets/posters/sw/acolyte.jpg",
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/series/the-acolyte/57isdbcyG9HA",
+    "scena_ikoniczna_url": "assets/scenes/sw/acolyte_bg.jpg",
+    "watched": false
+  },
+  {
+    "id": 203,
+    "tytul": "Five Nights at Freddy's 2",
+    "typ": "Game",
+    "data_premiery": "1987",
+    "opis_krotki": "only one cam is needed",
+    "poster_url": "assets/posters/sw/acolyte.jpg",
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/series/the-acolyte/57isdbcyG9HA",
+    "scena_ikoniczna_url": "assets/scenes/sw/acolyte_bg.jpg",
+    "watched": false
+  },
+  {
+    "id": 204,
+    "tytul": "Five Nights at Freddy's 1",
+    "typ": "Game",
+    "data_premiery": "1993",
+    "opis_krotki": "Hur hur hur hur hur",
+    "poster_url": "assets/posters/sw/acolyte.jpg",
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/series/the-acolyte/57isdbcyG9HA",
+    "scena_ikoniczna_url": "assets/scenes/sw/acolyte_bg.jpg",
+    "watched": false
+  },
+  {
+    "id": 205,
+    "tytul": "Five Nights at Freddy's Sister Location",
+    "typ": "Game",
+    "data_premiery": "~1995",
+    "opis_krotki": "Who want's ice cream?",
+    "poster_url": "assets/posters/sw/acolyte.jpg",
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/series/the-acolyte/57isdbcyG9HA",
+    "scena_ikoniczna_url": "assets/scenes/sw/acolyte_bg.jpg",
+    "watched": false
+  },
+  {
+    "id": 205,
+    "tytul": "Five Nights at Freddy's 3",
+    "typ": "Game",
+    "data_premiery": "2023",
+    "opis_krotki": "I always come back",
+    "poster_url": "assets/posters/sw/acolyte.jpg",
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/series/the-acolyte/57isdbcyG9HA",
+    "scena_ikoniczna_url": "assets/scenes/sw/acolyte_bg.jpg",
+    "watched": false
+  },
+  {
+    "id": 206,
+    "tytul": "Freddy Fazbear's Pizzeria Simulator",
+    "typ": "Game",
+    "data_premiery": "~2024/5",
+    "opis_krotki": "I'm sorry to interrupt you, Elizabeth, if you still even remember that name",
+    "poster_url": "assets/posters/sw/acolyte.jpg",
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/series/the-acolyte/57isdbcyG9HA",
+    "scena_ikoniczna_url": "assets/scenes/sw/acolyte_bg.jpg",
+    "watched": false
+  },
+  {
+    "id": 207,
+    "tytul": "Ultimate Custom Night",
+    "typ": "Game",
+    "data_premiery": "???",
+    "opis_krotki": "I was the first, I have seen everything.",
+    "poster_url": "assets/posters/sw/acolyte.jpg",
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/series/the-acolyte/57isdbcyG9HA",
+    "scena_ikoniczna_url": "assets/scenes/sw/acolyte_bg.jpg",
+    "watched": false
+  },
+  {
+    "id": 208,
+    "tytul": "Five Nights at Freddy's Help Wanted",
+    "typ": "Game",
+    "data_premiery": "Po 2023",
+    "opis_krotki": "Pomoc czeba",
+    "poster_url": "assets/posters/sw/acolyte.jpg",
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/series/the-acolyte/57isdbcyG9HA",
+    "scena_ikoniczna_url": "assets/scenes/sw/acolyte_bg.jpg",
+    "watched": false
+  },
+  {
+    "id": 209,
+    "tytul": "Five Nights at Freddy's Help Wanted 2",
+    "typ": "Game",
+    "data_premiery": "Po 2023",
+    "opis_krotki": "Pomoc czeba 2",
+    "poster_url": "assets/posters/sw/acolyte.jpg",
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/series/the-acolyte/57isdbcyG9HA",
+    "scena_ikoniczna_url": "assets/scenes/sw/acolyte_bg.jpg",
+    "watched": false
+  },
+  {
+    "id": 210,
+    "tytul": "Five Nights at Freddy's Security Breach",
+    "typ": "Game",
+    "data_premiery": "~2030",
+    "opis_krotki": "Michałek włamał się do dużego budynku",
+    "poster_url": "assets/posters/sw/acolyte.jpg",
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/series/the-acolyte/57isdbcyG9HA",
+    "scena_ikoniczna_url": "assets/scenes/sw/acolyte_bg.jpg",
+    "watched": false
+  },
+  {
+    "id": 211,
+    "tytul": "Five Nights at Freddy's Security Breach DLC: Ruin",
+    "typ": "Game",
+    "data_premiery": "~2030",
+    "opis_krotki": "THE MIMIC",
+    "poster_url": "assets/posters/sw/acolyte.jpg",
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/series/the-acolyte/57isdbcyG9HA",
+    "scena_ikoniczna_url": "assets/scenes/sw/acolyte_bg.jpg",
+    "watched": false
+  }
+]

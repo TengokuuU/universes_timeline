@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.theme-marvel {
+  --main-color: #ff0000;
+  --glow-color: rgba(255, 0, 0, 0.6);
+}
+
+/* Motyw Star Wars (Żółty) */
+.theme-starwars {
+  --main-color: #ffe81f;
+  --glow-color: rgba(255, 232, 31, 0.5);
+}
+
+/* Motyw FNAF (Fioletowy) */
+.theme-fnaf {
+  --main-color: #8a2be2;
+  --glow-color: rgba(138, 43, 226, 0.6);
+}
+
+/* Użycie w elementach */
+.card-title {
+  color: var(--main-color);
+}
+
+.card-container {
+  box-shadow: 0 0 20px var(--glow-color);
+  border: 1px solid var(--main-color);
+}
+
+*
+{
+  font-family: "work sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #000;
+  border: none;
+  outline: none;
+}
+
+body {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+:root {
+  --marvel-red: #e62429;
+  --timeline-color: #444;
+  --card-bg: rgba(20, 20, 20, 0.9);
+  --text-color: #f0f0f0;
+}
+
+.timeline-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: auto; 
+  overflow-y: hidden;
+  display: flex;
+  align-items: center;
+  background: #000;
+  scroll-behavior: auto !important;
+}
+
+.timeline-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+.timeline-wrapper::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+}
+.timeline-wrapper::-webkit-scrollbar-thumb {
+  background: var(--marvel-red);
+  border-radius: 10px;
+}
+
+/* TOR I ELEMENTY */
+.timeline-track {
+  display: flex;
+  height: 100%;
+  padding: 0 15vw;
+  z-index: 2;
+  align-items: center;
+  position: relative;
+}
+
+.timeline-track::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+              var(--bg-layer-1, url('/assets/misc/background_main.jpg')) no-repeat center center;
+  background-size: cover;
+  z-index: -2;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 1;
+  pointer-events: none;
+}
+
+.timeline-track::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+              var(--bg-layer-2, url('/assets/misc/background_main.jpg')) no-repeat center center;
+  background-size: cover;
+  z-index: -1;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.timeline-track.fade-to-layer-2::before {
+  opacity: 0;
+}
+
+.timeline-track.fade-to-layer-2::after {
+  opacity: 1;
+}
+
+.timeline-axis {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  transform: translateY(-50%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.main-line { 
+  width: 100%; 
+  height: 100%; 
+  background: rgb(201,201,201); 
+}
+
+.progress-line { 
+  height: 100%; 
+  background: var(--marvel-red); 
+  box-shadow: 0 0 15px var(--marvel-red); 
+  transition: width 0.5s; 
+}
+
+.timeline-item {
+  position: relative;
+  min-width: 380px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  background: rgb(201, 201, 201);
+  border: 3px solid var(--marvel-red);
+  border-radius: 50%;
+  z-index: 100;
+  box-shadow: 0 0 10px var(--marvel-red);
+}
+
+.card-anchor {
+  position: absolute;
+  bottom: 50%;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline-item.bottom .card-anchor {
+  bottom: auto;
+  top: 50%;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+.mcu-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: rgba(15, 15, 15, 0.9);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+  width: 220px;
+  height: 330px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.8);
+}
+
+.poster-wrapper {
+  width: 220px;
+  height: 330px;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 5;
+}
+
+.poster-img { 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  display: block;
+}
+
+.details-box {
+  width: 320px;
+  padding: 0;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.4s ease;
+  max-width: 0;
+}
+
+.details-box h3 {
+  color: #e62429;
+  margin: 0 0 15px 0;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.details-box p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ddd;
+  margin: 0 0 15px 0;
+}
+
+.mcu-card:hover {
+  width: 540px;
+  transform: scale(1.05) translateY(-10px);
+  box-shadow: 0 20px 50px rgba(230, 36, 41, 0.3);
+}
+
+.timeline-item.bottom .mcu-card:hover {
+  transform: scale(1.05) translateY(10px);
+}
+
+.mcu-card:hover .details-box {
+  opacity: 1;
+  max-width: 320px;
+  padding: 25px;
+}
+
+.card-anchor::after {
+  content: '';
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  width: 2px;
+  height: 25px;
+  background: linear-gradient(to bottom, var(--marvel-red), transparent);
+  z-index: 1;
+}
+
+.timeline-item.bottom .card-anchor::after {
+  bottom: auto;
+  top: -25px;
+  background: linear-gradient(to top, var(--marvel-red), transparent);
+}
+
+.watched-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e62429;
+  font-size: 60px;
+  text-shadow: 0 0 20px #000;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.dplus-link {
+  display: inline-block;
+}
+
+.dplus-link img {
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+  transition: filter 0.3s;
+  display: block;
+}
+
+.dplus-link:hover img {
+  filter: drop-shadow(0 0 8px rgba(255,255,255,0.8));
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 6px 8px;
+  border-radius: 4px;
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+
+.sadge {
+  color: rgb(241,241,241);
+  font-size: 14px;
+}
+
+/*MENU*/
+/* Przycisk Burgera */
+.menu-btn {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-btn-burger {
+  width: 30px;
+  height: 3px;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.menu-btn-burger::before, .menu-btn-burger::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.menu-btn-burger::before { transform: translateY(-10px); }
+.menu-btn-burger::after { transform: translateY(10px); }
+
+/* Animacja ikony do X */
+.menu-btn.open .menu-btn-burger { transform: translateX(-50px); background: transparent; }
+.menu-btn.open .menu-btn-burger::before { transform: rotate(45deg) translate(35px, -35px); }
+.menu-btn.open .menu-btn-burger::after { transform: rotate(-45deg) translate(35px, 35px); }
+
+/* Panel Menu */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(15px);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 999;
+  transition: left 0.5s cubic-bezier(0.77,0,0.175,1);
+  padding: 100px 40px;
+}
+
+.side-menu.active {
+  left: 0;
+}
+.side-menu h2 {
+  color: white;
+  font-family: 'Marvel', sans-serif; /* Albo inna stylowa czcionka */
+  letter-spacing: 5px;
+  margin-bottom: 50px;
+}
+
+.side-menu ul { list-style: none; padding: 0; }
+
+.side-menu li {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.2rem;
+  margin: 25px 0;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.side-menu li:hover {
+  color: white;
+  transform: translateX(15px);
+}
+/* Kolorowe kropki przy uniwersach */
+.dot { width: 8px; height: 8px; border-radius: 50%; margin-right: 15px; background: white; }
+.marvel-link:hover .dot { background: #e62429; box-shadow: 0 0 10px #e62429; }
+.sw-link:hover .dot { background: #ffe81f; box-shadow: 0 0 10px #ffe81f; }
+.fnaf-link:hover .dot { background: #8e44ad; box-shadow: 0 0 10px #8e44ad; }

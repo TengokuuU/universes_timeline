@@ -1,0 +1,80 @@
+<div class="menu-btn" [class.open]="isMenuOpen" (click)="toggleMenu()">
+  <div class="menu-btn-burger"></div>
+</div>
+
+<div class="side-menu" [class.active]="isMenuOpen">
+  <nav>
+    <h2>Multiversum</h2>
+    <ul>
+      <li class="marvel-link" (click)="switchUniverse('mcu_movies_data')">
+        <span class="dot"></span> MARVEL
+      </li>
+      <li class="sw-link" (click)="switchUniverse('starwars_movies_data')">
+        <span class="dot"></span> Star Wars
+      </li>
+      <li class="fnaf-link" (click)="switchUniverse('fnaf_games_data')">
+        <span class="dot"></span> Five Nights at Freddy's
+      </li>
+    </ul>
+  </nav>
+</div>
+<div class="timeline-wrapper" #timelineWrapper>
+  <div class="timeline-track" #timeline>
+    <div class="timeline-axis">
+      <div class="main-line"></div>
+      <div class="progress-line" [style.width.%]="45"></div>
+    </div>
+    <!-- element na osi, generowane z jsona w pętli -->
+    @for (item of mcuItems; track item.id; let i = $index) {
+    <div class="timeline-item" [class.bottom]="i % 2 !== 0">
+
+      <div class="timeline-dot"></div>
+
+      <div class="card-anchor">
+        <div class="mcu-card" 
+             (mouseenter)="setHoverBg(item)" 
+             (mouseleave)="setHoverBg(null)">
+
+          <div class="poster-wrapper">
+            <img [src]="item.poster_url" class="poster-img" [alt]="item.tytul" (click)="toggleWatched(item, $event)">
+            <div class="watched-overlay" *ngIf="item.watched">
+              <span class="check-icon">✔</span>
+            </div>
+          </div>
+
+          <div class="details-box">
+            <h3>{{ item.tytul }}</h3>
+            <p class="description">{{ item.opis_krotki }}</p>
+            @if(item.id == 36)
+            {
+            <p class="sadge">Short aktualnie niedostępny na Disney+.</p>
+            }
+            @else
+            {
+            <a [href]="item.link_disney_plus" class="dplus-link">
+              <div class="tooltip">
+                @if(item.id == 25 || item.id == 37)
+                {
+                <img src="assets/misc/ntflx.svg" alt="Netflix" width="60">
+                }
+                @else if(item.id == 39)
+                {
+                <img src="assets/misc/amzn.svg" alt="Amazon Prime" width="60">
+                }
+                @else
+                {
+                <img src="assets/misc/dsnplus.svg" alt="Disney+" width="60">
+                }
+                <span class="tooltip-text">Link do filmu</span>
+              </div>
+            </a>
+            }
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    }
+  </div>
+</div>
