@@ -1,7 +1,8 @@
+<!-- MENU BUTTON -->
 <div class="menu-btn" [class.open]="isMenuOpen" (click)="toggleMenu()">
   <div class="menu-btn-burger"></div>
 </div>
-
+<!-- MENU RIGHT HERE -->
 <div class="side-menu" [class.active]="isMenuOpen">
   <nav>
     <h2>Multiversum</h2>
@@ -16,35 +17,43 @@
         <span class="dot"></span> Five Nights at Freddy's
       </li>
     </ul>
+    <div class="side-menu-footer">
+      <p>TengokuuU</p>
+      <span class="ai-badge">Built with AI support</span>
+    <span class="copyright">&copy; 2026 | All Rights Reserved</span>
+    </div>
   </nav>
 </div>
+
+<!-- TIMELINE -->
 <div class="timeline-wrapper" #timelineWrapper [ngClass]="currentTheme">
   <div class="timeline-track" #timeline>
     <div class="timeline-axis">
       <div class="main-line"></div>
       <div class="progress-line" [style.width.%]="45"></div>
     </div>
-    <!-- element na osi, generowane z jsona w pętli -->
+    <!-- TIMELINE ELEMENT, GENERATE FROM JSON FILE -->
     @for (item of mcuItems; track item.id; let i = $index) {
     <div class="timeline-item" [class.bottom]="i % 2 !== 0">
 
       <div class="timeline-dot"></div>
 
       <div class="card-anchor">
-        <div class="mcu-card" 
-             (mouseenter)="setHoverBg(item)" 
-             (mouseleave)="setHoverBg(null)">
 
+        <!-- ENTIRE CARD -->
+        <div class="mcu-card" (mouseenter)="setHoverBg(item)" (mouseleave)="setHoverBg(null)">
           <div class="poster-wrapper">
             <img [src]="item.poster_url" class="poster-img" [alt]="item.tytul" (click)="toggleWatched(item, $event)">
             <div class="watched-overlay" *ngIf="item.watched">
               <span class="check-icon">✔</span>
             </div>
           </div>
-
+          <!-- AFTER HOVER ELEMENT WITH DETAILS -->
           <div class="details-box">
-            <h3>{{ item.tytul }}</h3> <!-- Tytuł filmu/gry -->
+            <h3>{{ item.tytul }}</h3>
             <p class="description">{{ item.opis_krotki }}</p>
+            <p class="release-date">Data wydania: {{ item.data_premiery }}</p>
+            <!-- LINKING TO SITES -->
             @if(item.id == 36)
             {
             <p class="sadge">Short aktualnie niedostępny na Disney+.</p>
@@ -62,25 +71,20 @@
                 <img src="assets/misc/amzn.svg" alt="Amazon Prime" width="60">
                 <span class="tooltip-text">Link do filmu</span>
                 }
-                @else if(item.id >= 201 && item.id <= 211)
-                {
-                <img src="assets/misc/stm.svg" alt="Steam" width="60">
-                <span class="tooltip-text">Link do gry</span>
-                }
-                @else
-                {
-                <img src="assets/misc/dsnplus.svg" alt="Disney+" width="60">
-                <span class="tooltip-text">Link do filmu</span>
-                }
-                
+                @else if(item.id >= 201 && item.id <= 211) { <img src="assets/misc/stm.svg" alt="Steam" width="60">
+                  <span class="tooltip-text">Link do gry</span>
+                  }
+                  @else
+                  {
+                  <img src="assets/misc/dsnplus.svg" alt="Disney+" width="60">
+                  <span class="tooltip-text">Link do filmu</span>
+                  }
               </div>
             </a>
             }
           </div>
-
         </div>
       </div>
-
     </div>
     }
   </div>

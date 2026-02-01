@@ -22,12 +22,14 @@ export class App implements OnInit {
 
   constructor(private dataService: DataService) {}
 
+
+
+//bazowo marvel się wyświetla
   ngOnInit() {
-    // Startujemy od Marvela jako domyślne
     this.switchUniverse('mcu_movies_data');
   }
 
-  // Przełączanie uniwersum (wywoływane z burger menu)
+//zmienianie uniwersum z menu
   switchUniverse(universe: string) {
     this.dataService.getUniverseTimeline(universe).subscribe({
       next: (data: MCUItem[]) => {
@@ -51,11 +53,11 @@ export class App implements OnInit {
       error: (err) => console.error('Błąd ładowania danych uniwersum:', err)
     });
   }
-
+//otwieranie i zamykanie menu
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
   }
-
+//horyzontalne scrollowanie
   @HostListener('wheel', ['$event'])
   onWheel(event: WheelEvent) {
     if (this.timelineWrapper) {
@@ -63,20 +65,20 @@ export class App implements OnInit {
       event.preventDefault();
     }
   }
-
+//zaznaczanie jako obejrzane/ograne
   toggleWatched(item: any, event: Event) {
     event.stopPropagation();
     item.watched = !item.watched;
     this.saveToLocalStorage();
   }
-
+//zapis do local storage
   saveToLocalStorage() {
     const watchedIds = this.mcuItems
       .filter(item => item.watched)
       .map(item => item.id);
     localStorage.setItem('mcu_watched_list', JSON.stringify(watchedIds));
   }
-
+//załadowanie zapisu z local storage
   loadWatchedStatus() {
     const saved = localStorage.getItem('mcu_watched_list');
     if (saved) {
@@ -88,7 +90,7 @@ export class App implements OnInit {
       });
     }
   }
-
+//zmiana tła na hover
   setHoverBg(item: any | null) {
     const track = this.timeline?.nativeElement;
     if (!track) return;

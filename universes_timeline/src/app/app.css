@@ -1,34 +1,30 @@
+/* --- FUNDAMENTY I ZMIENNE --- */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+  --marvel-red: #e62429;
+  --timeline-color: #444;
+  --card-bg: rgba(20, 20, 20, 0.9);
+  --text-color: #f0f0f0;
+}
+
+/* Motywy uniwersów */
 .theme-marvel {
   --main-color: #ff0000;
   --glow-color: rgba(255, 0, 0, 0.6);
 }
 
-/* Motyw Star Wars (Żółty) */
 .theme-starwars {
   --main-color: #ffe81f;
   --glow-color: rgba(255, 232, 31, 0.5);
 }
 
-/* Motyw FNAF (Fioletowy) */
 .theme-fnaf {
   --main-color: #8a2be2;
   --glow-color: rgba(138, 43, 226, 0.6);
 }
 
-/* Użycie w elementach */
-.card-title {
-  color: var(--main-color);
-}
-
-.card-container {
-  box-shadow: 0 0 20px var(--glow-color);
-  border: 1px solid var(--main-color);
-}
-
-*
-{
+* {
   font-family: "work sans", sans-serif;
   margin: 0;
   padding: 0;
@@ -54,13 +50,7 @@ body {
   bottom: 0;
 }
 
-:root {
-  --marvel-red: #e62429;
-  --timeline-color: #444;
-  --card-bg: rgba(20, 20, 20, 0.9);
-  --text-color: #f0f0f0;
-}
-
+/* --- TIMELINE STRUCTURE --- */
 .timeline-wrapper {
   position: fixed;
   top: 0;
@@ -78,15 +68,16 @@ body {
 .timeline-wrapper::-webkit-scrollbar {
   height: 8px;
 }
+
 .timeline-wrapper::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0.3);
 }
+
 .timeline-wrapper::-webkit-scrollbar-thumb {
   background: var(--marvel-red);
   border-radius: 10px;
 }
 
-/* TOR I ELEMENTY */
 .timeline-track {
   display: flex;
   height: 100%;
@@ -96,6 +87,7 @@ body {
   position: relative;
 }
 
+/* TIMELINE TRACK BACKGROUND MANAGEMENT */
 .timeline-track::before {
   content: '';
   position: fixed;
@@ -136,6 +128,7 @@ body {
   opacity: 1;
 }
 
+/* TIMELINE AXIS & DOTS */
 .timeline-axis {
   position: absolute;
   top: 50%;
@@ -151,13 +144,6 @@ body {
   width: 100%; 
   height: 100%; 
   background: rgb(201,201,201); 
-}
-
-.progress-line { 
-  height: 100%; 
-  background: var(--marvel-red); 
-  box-shadow: 0 0 15px var(--marvel-red); 
-  transition: width 0.5s; 
 }
 
 .timeline-item {
@@ -184,6 +170,7 @@ body {
   box-shadow: 0 0 10px var(--marvel-red);
 }
 
+/* --- CARDS STYLES --- */
 .card-anchor {
   position: absolute;
   bottom: 50%;
@@ -200,6 +187,23 @@ body {
   margin-bottom: 0;
 }
 
+.card-anchor::after {
+  content: '';
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  width: 2px;
+  height: 25px;
+  background: linear-gradient(to bottom, var(--marvel-red), transparent);
+  z-index: 1;
+}
+
+.timeline-item.bottom .card-anchor::after {
+  bottom: auto;
+  top: -25px;
+  background: linear-gradient(to top, var(--marvel-red), transparent);
+}
+
 .mcu-card {
   position: relative;
   display: flex;
@@ -212,6 +216,11 @@ body {
   height: 330px;
   overflow: hidden;
   box-shadow: 0 15px 35px rgba(0,0,0,0.8);
+}
+
+.card-container {
+  box-shadow: 0 0 20px var(--glow-color);
+  border: 1px solid var(--main-color);
 }
 
 .poster-wrapper {
@@ -240,6 +249,10 @@ body {
   max-width: 0;
 }
 
+.card-title {
+  color: var(--main-color);
+}
+
 .details-box h3 {
   color: var(--main-color);
   transition: color 0.4s ease;
@@ -257,9 +270,9 @@ body {
   margin: 0 0 15px 0;
 }
 
+/* CARD HOVER STYLES */
 .mcu-card:hover {
   width: 540px;
-  transform: scale(1.05) translateY(-10px);
   transform: scale(1.05) translateY(-10px);
   box-shadow: 0 20px 50px var(--glow-color); 
 }
@@ -274,23 +287,7 @@ body {
   padding: 25px;
 }
 
-.card-anchor::after {
-  content: '';
-  position: absolute;
-  bottom: -25px;
-  left: 50%;
-  width: 2px;
-  height: 25px;
-  background: linear-gradient(to bottom, var(--marvel-red), transparent);
-  z-index: 1;
-}
-
-.timeline-item.bottom .card-anchor::after {
-  bottom: auto;
-  top: -25px;
-  background: linear-gradient(to top, var(--marvel-red), transparent);
-}
-
+/* --- TOOLTIPS, LINKS, OVERLAYS --- */
 .watched-overlay {
   position: absolute;
   inset: 0;
@@ -347,8 +344,7 @@ body {
   font-size: 14px;
 }
 
-/*MENU*/
-/* Przycisk Burgera */
+/* --- NAVIGATION --- */
 .menu-btn {
   position: fixed;
   top: 30px;
@@ -369,7 +365,8 @@ body {
   transition: all 0.3s ease;
 }
 
-.menu-btn-burger::before, .menu-btn-burger::after {
+.menu-btn-burger::before, 
+.menu-btn-burger::after {
   content: '';
   position: absolute;
   width: 30px;
@@ -381,12 +378,10 @@ body {
 .menu-btn-burger::before { transform: translateY(-10px); }
 .menu-btn-burger::after { transform: translateY(10px); }
 
-/* Animacja ikony do X */
 .menu-btn.open .menu-btn-burger { transform: translateX(-50px); background: transparent; }
 .menu-btn.open .menu-btn-burger::before { transform: rotate(45deg) translate(35px, -35px); }
 .menu-btn.open .menu-btn-burger::after { transform: rotate(-45deg) translate(35px, 35px); }
 
-/* Panel Menu */
 .side-menu {
   position: fixed;
   top: 0;
@@ -404,9 +399,10 @@ body {
 .side-menu.active {
   left: 0;
 }
+
 .side-menu h2 {
   color: white;
-  font-family: 'Marvel', sans-serif; /* Albo inna stylowa czcionka */
+  font-family: 'Marvel', sans-serif;
   letter-spacing: 5px;
   margin-bottom: 50px;
 }
@@ -427,8 +423,52 @@ body {
   color: white;
   transform: translateX(15px);
 }
-/* Kolorowe kropki przy uniwersach */
-.dot { width: 8px; height: 8px; border-radius: 50%; margin-right: 15px; background: white; }
+
+.dot { 
+  width: 8px; 
+  height: 8px; 
+  border-radius: 50%; 
+  margin-right: 15px; 
+  background: white; 
+}
+
 .marvel-link:hover .dot { background: #e62429; box-shadow: 0 0 10px #e62429; }
 .sw-link:hover .dot { background: #ffe81f; box-shadow: 0 0 10px #ffe81f; }
 .fnaf-link:hover .dot { background: #8e44ad; box-shadow: 0 0 10px #8e44ad; }
+
+/* MENU FOOTER */
+.side-menu-footer {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+  padding: 0 40px;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.side-menu-footer:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.side-menu-footer p {
+  margin-bottom: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.side-menu-footer .ai-badge {
+  font-style: italic;
+  opacity: 0.6;
+  display: block;
+  margin-top: 4px;
+}
+
+.side-menu-footer .copyright {
+  font-size: 0.7rem;
+  margin-top: 10px;
+  display: block;
+}
