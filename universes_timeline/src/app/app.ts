@@ -13,6 +13,7 @@ import { DataService } from '../core/services/data.service';
 export class App implements OnInit {
   mcuItems: MCUItem[] = [];
   isMenuOpen = false;
+  currentTheme = 'theme-marvel';
   defaultBg = 'assets/misc/background_main.jpg';
   private currentLayer: 1 | 2 = 1;
 
@@ -31,6 +32,14 @@ export class App implements OnInit {
     this.dataService.getUniverseTimeline(universe).subscribe({
       next: (data: MCUItem[]) => {
         this.mcuItems = data;
+        if (universe.includes('starwars')) {
+          this.currentTheme = 'theme-starwars';
+        } else if (universe.includes('fnaf')) {
+          this.currentTheme = 'theme-fnaf';
+        } else {
+          this.currentTheme = 'theme-marvel';
+        }
+
         this.loadWatchedStatus();
         this.isMenuOpen = false;
         

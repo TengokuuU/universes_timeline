@@ -18,7 +18,7 @@
     </ul>
   </nav>
 </div>
-<div class="timeline-wrapper" #timelineWrapper>
+<div class="timeline-wrapper" #timelineWrapper [ngClass]="currentTheme">
   <div class="timeline-track" #timeline>
     <div class="timeline-axis">
       <div class="main-line"></div>
@@ -43,7 +43,7 @@
           </div>
 
           <div class="details-box">
-            <h3>{{ item.tytul }}</h3>
+            <h3>{{ item.tytul }}</h3> <!-- Tytuł filmu/gry -->
             <p class="description">{{ item.opis_krotki }}</p>
             @if(item.id == 36)
             {
