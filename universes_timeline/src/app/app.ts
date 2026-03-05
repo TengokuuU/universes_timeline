@@ -71,8 +71,18 @@ export class App implements OnInit {
     item.watched = !item.watched;
     this.saveToLocalStorage();
   }
+  toggleFave(item: any, event: Event)
+  {
+    event.stopPropagation();
+    item.fave = !item.fave;
+    this.saveToLocalStorage();
+  }
 //zapis do local storage
   saveToLocalStorage() {
+    const faveIds = this.mcuItems
+      .filter(item => item.fave)
+      .map(item => item.id);
+    localStorage.setItem('mcu_fave_list', JSON.stringify(faveIds));
     const watchedIds = this.mcuItems
       .filter(item => item.watched)
       .map(item => item.id);
@@ -81,6 +91,15 @@ export class App implements OnInit {
 //załadowanie zapisu z local storage
   loadWatchedStatus() {
     const saved = localStorage.getItem('mcu_watched_list');
+    const saved_fv = localStorage.getItem('mcu_fave_list');
+    if (saved_fv) {
+      const faveIds: number[] = JSON.parse(saved_fv);
+      this.mcuItems.forEach(item => {
+        if (faveIds.includes(item.id)) {
+          item.fave = true;
+        }
+      });
+    }
     if (saved) {
       const watchedIds: number[] = JSON.parse(saved);
       this.mcuItems.forEach(item => {

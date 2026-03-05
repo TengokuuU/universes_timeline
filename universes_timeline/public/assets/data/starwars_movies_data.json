@@ -8,7 +8,8 @@
     "poster_url": "assets/posters/sw/acolyte.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-a5c84b7d-fd4e-42c8-95e3-960e73e1a71e",
     "scena_ikoniczna_url": "assets/scenes/sw/acolyte_bg.jpg",
-    "watched": false
+    "watched": false,
+    "fave": false
   },
   {
     "id": 102,
@@ -19,7 +20,8 @@
     "poster_url": "assets/posters/sw/ep1.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-e0a9fee4-2959-4077-ad8c-8fab4fd6e4d1",
     "scena_ikoniczna_url": "assets/scenes/sw/ep1_bg.jpg",
-    "watched": false
+    "watched": false,
+    "fave": false
   },
   {
     "id": 103,
@@ -30,7 +32,8 @@
     "poster_url": "assets/posters/sw/ep2.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-39cbdf17-1bbe-4de2-b4a4-8e342875c2c6",
     "scena_ikoniczna_url": "assets/scenes/sw/ep2_bg.jpg",
-    "watched": false
+    "watched": false,
+    "fave": false
   },
   {
     "id": 104,
@@ -41,7 +44,8 @@
     "poster_url": "assets/posters/sw/clone_wars_movie.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-24a03eff-e68a-4743-828d-32ba9ffc0c7f",
     "scena_ikoniczna_url": "assets/scenes/sw/cw_movie_bg.jpg",
-    "watched": false
+    "watched": false,
+    "fave": false
   },
   {
     "id": 105,
@@ -52,7 +56,8 @@
     "poster_url": "assets/posters/sw/clone_wars_series.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-314f14b4-b70a-4ec6-b634-2559f0b1f77e",
     "scena_ikoniczna_url": "assets/scenes/sw/cw_series_bg.jpg",
-    "watched": false
+    "watched": false,
+    "fave": false
   },
   {
     "id": 106,
@@ -63,7 +68,8 @@
     "poster_url": "assets/posters/sw/tales_jedi.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-da8eb910-7fba-44ae-a37e-edd4b4d6630b",
     "scena_ikoniczna_url": "assets/scenes/sw/tales_jedi_bg.jpg",
-    "watched": false
+    "watched": false,
+    "fave": false
   },
   {
     "id": 107,
@@ -74,7 +80,8 @@
     "poster_url": "assets/posters/sw/ep3.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-eb1e2c5f-69bf-4240-a61f-7ffc4e0311b3",
     "scena_ikoniczna_url": "assets/scenes/sw/ep3_bg.jpg",
-    "watched": false
+    "watched": false,
+    "fave": false
   },
   {
     "id": 108,
@@ -85,7 +92,8 @@
     "poster_url": "assets/posters/sw/bad_batch.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-c93113fb-94ec-43b6-9d38-308825f7cd94",
     "scena_ikoniczna_url": "assets/scenes/sw/bad_batch_bg.jpg",
-    "watched": false
+    "watched": false,
+    "fave": false
   },
   {
     "id": 109,
@@ -96,7 +104,8 @@
     "poster_url": "assets/posters/sw/solo.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-791bc772-d930-40c9-83ec-5ef85923573e",
     "scena_ikoniczna_url": "assets/scenes/sw/solo_bg.jpg",
-    "watched": false
+    "watched": false,
+    "fave": false
   },
   {
     "id": 110,
@@ -107,7 +116,8 @@
     "poster_url": "assets/posters/sw/obi_wan.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-e28eab5e-5cff-4ef2-b018-d2267c750364",
     "scena_ikoniczna_url": "assets/scenes/sw/obi_wan_bg.jpg",
-    "watched": false
+    "watched": false,
+    "fave": false
   },
   {
     "id": 111,
@@ -118,7 +128,8 @@
     "poster_url": "assets/posters/sw/andor.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-faba988a-a9f5-45f2-a074-0775a7d6f67a",
     "scena_ikoniczna_url": "assets/scenes/sw/andor_bg.jpg",
-    "watched": false
+    "watched": false,
+    "fave": false
   },
   {
     "id": 112,
@@ -129,7 +140,8 @@
     "poster_url": "assets/posters/sw/rebels.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-08249c74-0178-4861-a1e4-dfc7b168dce5",
     "scena_ikoniczna_url": "assets/scenes/sw/rebels_bg.jpg",
-    "watched": false
+    "watched": false,
+    "fave": false
   },
   {
     "id": 113,
@@ -140,7 +152,8 @@
     "poster_url": "assets/posters/sw/rogue_one.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-5ec74210-f970-42b7-a39f-8653c0a9eab8",
     "scena_ikoniczna_url": "assets/scenes/sw/rogue_bg.jpg",
-    "watched": false
+    "watched": false,
+    "fave": false
   },
   {
     "id": 114,
@@ -151,7 +164,8 @@
     "poster_url": "assets/posters/sw/ep4.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-9a280e53-fcc0-4e17-a02c-b1f40913eb0b",
     "scena_ikoniczna_url": "assets/scenes/sw/ep4_bg.jpg",
-    "watched": false
+    "watched": false,
+    "fave": false
   },
   {
     "id": 115,
@@ -162,7 +176,8 @@
     "poster_url": "assets/posters/sw/ep5.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-0f5c5223-f4f6-46ef-ba8a-69cb0e17d8d3",
     "scena_ikoniczna_url": "assets/scenes/sw/ep5_bg.jpg",
-    "watched": false
+    "watched": false,
+    "fave": false
   },
   {
     "id": 116,
@@ -173,7 +188,8 @@
     "poster_url": "assets/posters/sw/ep6.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-4b6e7cda-daa5-4f2d-9b61-35bbe562c69c",
     "scena_ikoniczna_url": "assets/scenes/sw/ep6_bg.jpg",
-    "watched": false
+    "watched": false,
+    "fave": false
   },
   {
     "id": 117,
@@ -184,7 +200,8 @@
     "poster_url": "assets/posters/sw/mando.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-422f6dcc-226f-44e7-98d4-22de69b31cf3",
     "scena_ikoniczna_url": "assets/scenes/sw/mando_bg.jpg",
-    "watched": false
+    "watched": false,
+    "fave": false
   },
   {
     "id": 118,
@@ -195,7 +212,8 @@
     "poster_url": "assets/posters/sw/boba_fett.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-3749c03e-8204-46c5-b102-0410e6d51758",
     "scena_ikoniczna_url": "assets/scenes/sw/boba_bg.jpg",
-    "watched": false
+    "watched": false,
+    "fave": false
   },
   {
     "id": 119,
@@ -206,7 +224,8 @@
     "poster_url": "assets/posters/sw/ahsoka.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-e64c22fc-fc7c-4ada-bbec-ab8351b8db97",
     "scena_ikoniczna_url": "assets/scenes/sw/ahsoka_bg.jpg",
-    "watched": false
+    "watched": false,
+    "fave": false
   },
   {
     "id": 120,
@@ -217,7 +236,8 @@
     "poster_url": "assets/posters/sw/ep7.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-2854a94d-3702-40bd-97a4-12d55a809188",
     "scena_ikoniczna_url": "assets/scenes/sw/ep7_bg.jpg",
-    "watched": false
+    "watched": false,
+    "fave": false
   },
   {
     "id": 121,
@@ -228,7 +248,8 @@
     "poster_url": "assets/posters/sw/ep8.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-50c1aff5-3051-4839-9ebf-e332c635e216",
     "scena_ikoniczna_url": "assets/scenes/sw/ep8_bg.jpg",
-    "watched": false
+    "watched": false,
+    "fave": false
   },
   {
     "id": 122,
@@ -239,6 +260,7 @@
     "poster_url": "assets/posters/sw/ep9.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-43f9c275-e7e8-4ab3-802d-00d06a8ad841",
     "scena_ikoniczna_url": "assets/scenes/sw/ep9_bg.jpg",
-    "watched": false
+    "watched": false,
+    "fave": false
   }
 ]
