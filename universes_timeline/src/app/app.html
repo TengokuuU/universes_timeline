@@ -54,6 +54,7 @@
             <h3>{{ item.tytul }}</h3>
             <p class="description">{{ item.opis_krotki }}</p>
             <p class="release-date">Data wydania: {{ item.data_premiery }}</p>
+            <p class="display-details" (click)="toggleFullDetails(item)">Więcej informacji...</p>
             <!-- LINKING TO SITES -->
             @if(item.id == 36)
             {
@@ -94,6 +95,13 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="full-details" style="display: none; z-index: 1000;">
+              <h2>{{ item.tytul }}</h2>
+      <img src="#" alt="movie logo title" class="logo-film">
+              <p class="director">Reżyser: <!-- {{ item.rezyser }} --></p>
+              <p class="runtime">Czas trwania:<!-- {{ item.czas_trwania }} -->min</p>
+              <p class="rating">Ocena:<!-- {{ item.ocena }}--></p>
     </div>
     }
   </div>

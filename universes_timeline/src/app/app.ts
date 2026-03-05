@@ -65,6 +65,23 @@ export class App implements OnInit {
       event.preventDefault();
     }
   }
+  toggleFullDetails(item: MCUItem) {
+    const detailsElement = document.querySelector('.full-details') as HTMLElement;
+    if (detailsElement) {
+      const isVisible = detailsElement.style.display === 'block';
+      if (isVisible) {
+        detailsElement.style.display = 'none';
+      } else {
+        detailsElement.style.display = 'block';
+        // Tutaj możesz dodać kod do wypełnienia szczegółów filmu/serialu, np.:
+        // detailsElement.querySelector('.logo-film')!.setAttribute('src', item.poster_url);
+        // detailsElement.querySelector('.director')!.textContent = `Reżyser: ${item.rezyser}`;
+        // detailsElement.querySelector('.runtime')!.textContent = `Czas trwania: ${item.czas_trwania} min`;
+        // detailsElement.querySelector('.rating')!.textContent = `Ocena: ${item.ocena}`;
+      }
+    }
+  }
+
 //zaznaczanie jako obejrzane/ograne
   toggleWatched(item: any, event: Event) {
     event.stopPropagation();
