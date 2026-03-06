@@ -13,6 +13,8 @@ import { DataService } from '../core/services/data.service';
 export class App implements OnInit {
   mcuItems: MCUItem[] = [];
   isMenuOpen = false;
+  selectedItem: MCUItem | null = null; // Tu przechowamy dane klikniętego filmu
+  isModalOpen = false;
   currentTheme = 'theme-marvel';
   defaultBg = 'assets/misc/background_main.jpg';
   private currentLayer: 1 | 2 = 1;
@@ -20,16 +22,16 @@ export class App implements OnInit {
   @ViewChild('timeline') timeline!: ElementRef;
   @ViewChild('timelineWrapper') timelineWrapper!: ElementRef;
 
-  constructor(private dataService: DataService) {}
+  constructor(private dataService: DataService) { }
 
 
 
-//bazowo marvel się wyświetla
+  //bazowo marvel się wyświetla
   ngOnInit() {
     this.switchUniverse('mcu_movies_data');
   }
 
-//zmienianie uniwersum z menu
+  //zmienianie uniwersum z menu
   switchUniverse(universe: string) {
     this.dataService.getUniverseTimeline(universe).subscribe({
       next: (data: MCUItem[]) => {
@@ -44,7 +46,7 @@ export class App implements OnInit {
 
         this.loadWatchedStatus();
         this.isMenuOpen = false;
-        
+
         if (this.timelineWrapper) {
           this.timelineWrapper.nativeElement.scrollLeft = 0;
         }
@@ -53,11 +55,11 @@ export class App implements OnInit {
       error: (err) => console.error('Błąd ładowania danych uniwersum:', err)
     });
   }
-//otwieranie i zamykanie menu
+  //otwieranie i zamykanie menu
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
   }
-//horyzontalne scrollowanie
+  //horyzontalne scrollowanie
   @HostListener('wheel', ['$event'])
   onWheel(event: WheelEvent) {
     if (this.timelineWrapper) {
@@ -65,36 +67,38 @@ export class App implements OnInit {
       event.preventDefault();
     }
   }
-  toggleFullDetails(item: MCUItem) {
-    const detailsElement = document.querySelector('.full-details') as HTMLElement;
-    if (detailsElement) {
-      const isVisible = detailsElement.style.display === 'block';
-      if (isVisible) {
-        detailsElement.style.display = 'none';
-      } else {
-        detailsElement.style.display = 'block';
-        // Tutaj możesz dodać kod do wypełnienia szczegółów filmu/serialu, np.:
-        // detailsElement.querySelector('.logo-film')!.setAttribute('src', item.poster_url);
-        // detailsElement.querySelector('.director')!.textContent = `Reżyser: ${item.rezyser}`;
-        // detailsElement.querySelector('.runtime')!.textContent = `Czas trwania: ${item.czas_trwania} min`;
-        // detailsElement.querySelector('.rating')!.textContent = `Ocena: ${item.ocena}`;
-      }
+  toggleFullDetails(item: MCUItem | null) {
+    this.isModalOpen = !this.isModalOpen;
+    if (item) {
+      // OTWIERANIE
+      this.selectedItem = item;
+      this.isModalOpen = true;
+    } else {
+      // ZAMYKANIE I RESET
+      this.isModalOpen = false;
+      this.selectedItem = null;
+
+      // Reset tła do domyślnego po wyjściu z modala
+      this.setHoverBg(null);
     }
   }
 
-//zaznaczanie jako obejrzane/ograne
+  //zaznaczanie jako obejrzane/ograne
   toggleWatched(item: any, event: Event) {
     event.stopPropagation();
+    if (this.isModalOpen) return; // Blokada, gdy modal otwarty
     item.watched = !item.watched;
     this.saveToLocalStorage();
   }
-  toggleFave(item: any, event: Event)
-  {
+
+  // ZMODYFIKOWANA FUNKCJA: Polubienie
+  toggleFave(item: any, event: Event) {
     event.stopPropagation();
+    if (this.isModalOpen) return; // Blokada, gdy modal otwarty
     item.fave = !item.fave;
     this.saveToLocalStorage();
   }
-//zapis do local storage
+  //zapis do local storage
   saveToLocalStorage() {
     const faveIds = this.mcuItems
       .filter(item => item.fave)
@@ -105,7 +109,7 @@ export class App implements OnInit {
       .map(item => item.id);
     localStorage.setItem('mcu_watched_list', JSON.stringify(watchedIds));
   }
-//załadowanie zapisu z local storage
+  //załadowanie zapisu z local storage
   loadWatchedStatus() {
     const saved = localStorage.getItem('mcu_watched_list');
     const saved_fv = localStorage.getItem('mcu_fave_list');
@@ -126,13 +130,15 @@ export class App implements OnInit {
       });
     }
   }
-//zmiana tła na hover
+  //zmiana tła na hover
   setHoverBg(item: any | null) {
+    if (this.isModalOpen) return;
+
     const track = this.timeline?.nativeElement;
     if (!track) return;
 
     const newBg = (item && item.scena_ikoniczna_url) ? item.scena_ikoniczna_url : this.defaultBg;
-    const currentBg = this.currentLayer === 1 
+    const currentBg = this.currentLayer === 1
       ? getComputedStyle(track).getPropertyValue('--bg-layer-1').trim()
       : getComputedStyle(track).getPropertyValue('--bg-layer-2').trim();
 

@@ -96,12 +96,45 @@
         </div>
       </div>
     </div>
-    <div class="full-details" style="display: none; z-index: 1000;">
-      <img src="#" alt="movie logo title" class="logo-film">
-              <p class="director">Reżyser: <!-- {{ item.rezyser }} --></p>
-              <p class="runtime">Czas trwania:<!-- {{ item.czas_trwania }} -->min</p>
-              <p class="rating">Ocena:<!-- {{ item.ocena }}--></p>
-    </div>
     }
   </div>
 </div>
+<div class="full-details-overlay" *ngIf="isModalOpen" (click)="toggleFullDetails(null)">
+    <div class="full-details-modal" (click)="$event.stopPropagation()">
+      <span class="close-modal" (click)="toggleFullDetails(null)">&times;</span>
+      
+      <div class="modal-content-placeholder">
+        <div class="modal-header">
+          <div class="logo-placeholder">LOGO FILMU</div>
+        </div>
+        
+        <div class="modal-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <span class="label">Reżyser:</span>
+              <span class="value"> {{ selectedItem?.rezyser }} </span>
+            </div>
+            <div class="info-item">
+              <span class="label">Czas trwania:</span>
+              @if(selectedItem?.typ == 'Serial')
+              {
+                <span class="value">{{selectedItem?.runtime}} min per odcinek</span>
+              }
+              @else if(selectedItem?.typ == 'Film')
+              {
+                <span class="value">{{ selectedItem?.runtime }} min</span>
+              }
+              @else
+              {
+                <span class="value"> {{ selectedItem?.runtime }} min</span>
+              }
+              </div>
+            <div class="info-item">
+              <span class="label">Ocena:</span>
+              <span class="value"> {{ selectedItem?.ocena }}% tomato score  </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

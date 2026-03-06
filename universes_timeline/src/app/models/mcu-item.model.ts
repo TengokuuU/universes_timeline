@@ -11,4 +11,7 @@ export interface MCUItem {
   scena_ikoniczna_url: string;
   watched?: boolean;
   fave?: boolean;
+  rezyser?: string;
+  runtime?: number;
+  ocena?: string;
 }

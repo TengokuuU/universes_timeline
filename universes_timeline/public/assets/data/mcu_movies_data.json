@@ -10,6 +10,9 @@
     "poster_url": "assets/posters/mcu/cap_1.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-8e68c43a-117c-4f4d-b217-0db106a1a614",
     "scena_ikoniczna_url": "assets/scenes/mcu/cap_1_scene.jpg",
+    "rezyser": "Joe Johnston",
+    "runtime": 124,
+    "ocena": 80,
     "watched": false,
     "fave": false
   },
@@ -24,6 +27,9 @@
     "poster_url": "assets/posters/mcu/carter_short.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-e4cbebda-a890-4e99-9a29-40d2162f7d46",
     "scena_ikoniczna_url": "assets/scenes/mcu/carter_short_scene.jpg",
+    "rezyser": "Louis D'Esposito",
+    "runtime": 4,
+    "ocena": null,
     "watched": false,
     "fave": false
   },
@@ -38,6 +44,9 @@
     "poster_url": "assets/posters/mcu/cap_marvel.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-1e383a14-1ea6-4345-9ab8-fd37618669af",
     "scena_ikoniczna_url": "assets/scenes/mcu/cap_marvel_scene.jpg",
+    "rezyser": "Anna Boden, Ryan Fleck",
+    "runtime": 123,
+    "ocena": 64,
     "watched": false,
     "fave": false
   },
@@ -52,6 +61,9 @@
     "poster_url": "assets/posters/mcu/iron_man.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-0c520152-b81f-4c20-9310-003debd1947e",
     "scena_ikoniczna_url": "assets/scenes/mcu/iron_man_scene.jpg",
+    "rezyser": "Jon Favreau",
+    "runtime": 126,
+    "ocena": 94,
     "watched": false,
     "fave": false
   },
@@ -66,6 +78,9 @@
     "poster_url": "assets/posters/mcu/iron_man_2.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-85c5529d-c053-4fa4-9957-4906eb5aedc6",
     "scena_ikoniczna_url": "assets/scenes/mcu/iron_man_2_scene.jpg",
+    "rezyser": "Jon Favreau",
+    "runtime": 124,
+    "ocena": 57,
     "watched": false,
     "fave": false
   },
@@ -80,6 +95,9 @@
     "poster_url": "assets/posters/mcu/hulk.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-30d00f7b-331a-4f43-b9e1-1989d39cb1a3",
     "scena_ikoniczna_url": "assets/scenes/mcu/hulk_scene.jpg",
+    "rezyser": "Louis Leterrier",
+    "runtime": 112,
+    "ocena": 67,
     "watched": false,
     "fave": false
   },
@@ -94,6 +112,9 @@
     "poster_url": "assets/posters/mcu/thor_hammer.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-b45838e2-aa7a-4985-923d-9fe949e40ece",
     "scena_ikoniczna_url": "assets/scenes/mcu/thor_hammer_scene.jpg",
+    "rezyser": "Joss Whedon",
+    "runtime": 4,
+    "ocena": null,
     "watched": false,
     "fave": false
   },
@@ -108,6 +129,9 @@
     "poster_url": "assets/posters/mcu/thor.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-479d41e3-8438-4ba4-b93d-8223220e069c",
     "scena_ikoniczna_url": "assets/scenes/mcu/thor_scene.jpg",
+    "rezyser": "Kenneth Branagh",
+    "runtime": 115,
+    "ocena": 77,
     "watched": false,
     "fave": false
   },
@@ -122,6 +146,9 @@
     "poster_url": "assets/posters/mcu/consultant.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-cad91b86-ab50-4fce-882f-ae71c86c2938",
     "scena_ikoniczna_url": "assets/scenes/mcu/consultant_scene.jpg",
+    "rezyser": "Leythum Waddell",
+    "runtime": 3,
+    "ocena": null,
     "watched": false,
     "fave": false
   },
@@ -136,6 +163,9 @@
     "poster_url": "assets/posters/mcu/avengers.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-3a5596d6-5133-4a8e-8d21-00e1531a4e0f",
     "scena_ikoniczna_url": "assets/scenes/mcu/avengers_scene.jpg",
+    "rezyser": "Joss Whedon",
+    "runtime": 143,
+    "ocena": 91,
     "watched": false,
     "fave": false
   },
@@ -150,6 +180,9 @@
     "poster_url": "assets/posters/mcu/item_47.jpg",
     "link_disney_plus": "https://www.disneyplus.com/en-kr/browse/entity-2cd46937-17fe-4ada-8de4-0972f2763f1c",
     "scena_ikoniczna_url": "assets/scenes/mcu/item47_scene.jpg",
+    "rezyser": "Jon Favreau",
+    "runtime": 3,
+    "ocena": null,
     "watched": false,
     "fave": false
   },
@@ -164,6 +197,9 @@
     "poster_url": "assets/posters/mcu/thor_2.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-7c4f4e28-4152-4f64-90ec-8b7f682c33d4",
     "scena_ikoniczna_url": "assets/scenes/mcu/thor_2_scene.jpg",
+    "rezyser": "Alan Taylor",
+    "runtime": 112,
+    "ocena": 66,
     "watched": false,
     "fave": false
   },
@@ -178,6 +214,9 @@
     "poster_url": "assets/posters/mcu/iron_man_3.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-e8569c2d-85ec-42a4-8811-b2618d494a40",
     "scena_ikoniczna_url": "assets/scenes/mcu/iron_man_3_scene.jpg",
+    "rezyser": "Shane Black",
+    "runtime": 130,
+    "ocena": 62,
     "watched": false,
     "fave": false
   },
@@ -192,6 +231,9 @@
     "poster_url": "assets/posters/mcu/all_hail.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-14988369-345c-4984-9c16-59428bd70609",
     "scena_ikoniczna_url": "assets/scenes/mcu/all_hail_scene.jpg",
+    "rezyser": "Drew Pearce",
+    "runtime": 5,
+    "ocena": null,
     "watched": false,
     "fave": false
   },
@@ -206,6 +248,9 @@
     "poster_url": "assets/posters/mcu/cap_2.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-ef333a5c-b855-4d3e-a7d9-d9e142b6dc7d",
     "scena_ikoniczna_url": "assets/scenes/mcu/cap_2_scene.jpg",
+    "rezyser": "Anthony Russo, Joe Russo",
+    "runtime": 136,
+    "ocena": 89,
     "watched": false,
     "fave": false
   },
@@ -220,6 +265,9 @@
     "poster_url": "assets/posters/mcu/gotg_1.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-c9ee959b-7249-4a4c-9708-9ffd1ddb00f1",
     "scena_ikoniczna_url": "assets/scenes/mcu/gotg_1_scene.jpg",
+    "rezyser": "James Gunn",
+    "runtime": 121,
+    "ocena": 91,
     "watched": false,
     "fave": false
   },
@@ -234,6 +282,9 @@
     "poster_url": "assets/posters/mcu/groot_s1e1.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-38f451b9-22df-4784-b580-4e4db4b92dba",
     "scena_ikoniczna_url": "assets/scenes/mcu/groot_s1e1_scene.jpg",
+    "rezyser": "Multiple",
+    "runtime": 4,
+    "ocena": null,
     "watched": false,
     "fave": false
   },
@@ -248,6 +299,9 @@
     "poster_url": "assets/posters/mcu/gotg_2.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-9fcd7087-c151-49dc-aeb9-b2f9943fd4e6",
     "scena_ikoniczna_url": "assets/scenes/mcu/gotg_2_scene.jpg",
+    "rezyser": "James Gunn",
+    "runtime": 137,
+    "ocena": 85,
     "watched": false,
     "fave": false
   },
@@ -262,6 +316,9 @@
     "poster_url": "assets/posters/mcu/groot_s2.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-38f451b9-22df-4784-b580-4e4db4b92dba",
     "scena_ikoniczna_url": "assets/scenes/mcu/groot_s2_scene.jpg",
+    "rezyser": "Multiple",
+    "runtime": 16,
+    "ocena": null,
     "watched": false,
     "fave": false
   },
@@ -276,6 +333,9 @@
     "poster_url": "assets/posters/mcu/avengers_2.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-39740da6-d484-471b-8dd7-a70c6151d705",
     "scena_ikoniczna_url": "assets/scenes/mcu/avengers_2_scene.jpg",
+    "rezyser": "Joss Whedon",
+    "runtime": 141,
+    "ocena": 75,
     "watched": false,
     "fave": false
   },
@@ -290,6 +350,9 @@
     "poster_url": "assets/posters/mcu/ant_man_1.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-af42798c-b9db-457f-b748-5e1f029c1ece",
     "scena_ikoniczna_url": "assets/scenes/mcu/ant_man_1_scene.jpg",
+    "rezyser": "Peyton Reed",
+    "runtime": 117,
+    "ocena": 83,
     "watched": false,
     "fave": false
   },
@@ -304,6 +367,9 @@
     "poster_url": "assets/posters/mcu/cap_3.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-2fe7e94e-8b24-4a75-8fc8-969c2a16959e",
     "scena_ikoniczna_url": "assets/scenes/mcu/cap_3_scene.jpg",
+    "rezyser": "Anthony Russo, Joe Russo",
+    "runtime": 147,
+    "ocena": 91,
     "watched": false,
     "fave": false
   },
@@ -318,6 +384,9 @@
     "poster_url": "assets/posters/mcu/black_widow.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-d9cd6bd1-bcf8-4a3b-8f92-0fdd4f79ac08",
     "scena_ikoniczna_url": "assets/scenes/mcu/black_widow_scene.jpg",
+    "rezyser": "Cate Shortland",
+    "runtime": 134,
+    "ocena": 79,
     "watched": false,
     "fave": false
   },
@@ -332,6 +401,9 @@
     "poster_url": "assets/posters/mcu/bp_1.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-8904b1b5-da2c-4ff1-b389-dc81825559fd",
     "scena_ikoniczna_url": "assets/scenes/mcu/bp_1_scene.jpg",
+    "rezyser": "Ryan Coogler",
+    "runtime": 134,
+    "ocena": 96,
     "watched": false,
     "fave": false
   },
@@ -346,6 +418,9 @@
     "poster_url": "assets/posters/mcu/sm_homecoming.jpg",
     "link_disney_plus": "https://www.netflix.com/watch/80166369?source=35",
     "scena_ikoniczna_url": "assets/scenes/mcu/smh_scene.jpg",
+    "rezyser": "Jon Watts",
+    "runtime": 133,
+    "ocena": 92,
     "watched": false,
     "fave": false
   },
@@ -360,6 +435,9 @@
     "poster_url": "assets/posters/mcu/ds_1.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-43a741e8-2369-4577-9bec-ef94f4aaae0b",
     "scena_ikoniczna_url": "assets/scenes/mcu/ds_1_scene.jpg",
+    "rezyser": "Scott Derrickson",
+    "runtime": 115,
+    "ocena": 89,
     "watched": false,
     "fave": false
   },
@@ -374,6 +452,9 @@
     "poster_url": "assets/posters/mcu/thor_3.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-766280de-0c00-4781-a388-2c85c5b4e259",
     "scena_ikoniczna_url": "assets/scenes/mcu/thor_3_scene.jpg",
+    "rezyser": "Taika Waititi",
+    "runtime": 130,
+    "ocena": 93,
     "watched": false,
     "fave": false
   },
@@ -388,6 +469,9 @@
     "poster_url": "assets/posters/mcu/ant_man_2.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-3533ca7b-e187-4bf5-a65c-7c903cd2d4ad",
     "scena_ikoniczna_url": "assets/scenes/mcu/ant_man_2_scene.jpg",
+    "rezyser": "Peyton Reed",
+    "runtime": 118,
+    "ocena": 88,
     "watched": false,
     "fave": false
   },
@@ -402,6 +486,9 @@
     "poster_url": "assets/posters/mcu/infinity_war.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-9a136e06-852a-41bf-b71d-fa061cb43225",
     "scena_ikoniczna_url": "assets/scenes/mcu/iw_scene.jpg",
+    "rezyser": "Anthony Russo, Joe Russo",
+    "runtime": 149,
+    "ocena": 85,
     "watched": false,
     "fave": false
   },
@@ -416,6 +503,9 @@
     "poster_url": "assets/posters/mcu/endgame.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-b39aa962-be56-4b09-a536-98617031717f",
     "scena_ikoniczna_url": "assets/scenes/mcu/endgame_scene.jpg",
+    "rezyser": "Anthony Russo, Joe Russo",
+    "runtime": 181,
+    "ocena": 84,
     "watched": false,
     "fave": false
   },
@@ -430,6 +520,9 @@
     "poster_url": "assets/posters/mcu/loki_s1.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-8f8c5cbb-e5ba-4285-9e2c-86abcac9fd50",
     "scena_ikoniczna_url": "assets/scenes/mcu/loki_s1_scene.jpg",
+    "rezyser": "Kate Herron",
+    "runtime": 50,
+    "ocena": null,
     "watched": false,
     "fave": false
   },
@@ -444,6 +537,9 @@
     "poster_url": "assets/posters/mcu/whatif_s1.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-fc588cfe-ff2b-4a44-abbd-d76359ce778f",
     "scena_ikoniczna_url": "assets/scenes/mcu/whatif_s1_scene.jpg",
+    "rezyser": "Multiple",
+    "runtime": 300,
+    "ocena": null,
     "watched": false,
     "fave": false
   },
@@ -458,6 +554,9 @@
     "poster_url": "assets/posters/mcu/wandavision.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-90affd1f-0851-48bc-9cab-c142d5c9c20c",
     "scena_ikoniczna_url": "assets/scenes/mcu/wandavision_scene.jpg",
+    "rezyser": "Matt Shakman",
+    "runtime": 300,
+    "ocena": null,
     "watched": false,
     "fave": false
   },
@@ -472,6 +571,9 @@
     "poster_url": "assets/posters/mcu/shangchi.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-92243dd0-bcfe-4365-ae76-1fa3cf1a2ab9",
     "scena_ikoniczna_url": "assets/scenes/mcu/shangchi_scene.jpg",
+    "rezyser": "Destin Daniel Cretton",
+    "runtime": 132,
+    "ocena": 91,
     "watched": false,
     "fave": false
   },
@@ -486,12 +588,15 @@
     "poster_url": "assets/posters/mcu/fatws.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-3c08a31a-2350-4aaf-90d0-88def4c551bf",
     "scena_ikoniczna_url": "assets/scenes/mcu/fatws_scene.jpg",
+    "rezyser": "Kari Skogland",
+    "runtime": 300,
+    "ocena": null,
     "watched": false,
     "fave": false
   },
   {
     "id": 36,
-    "tytul": "Peter’s To-Do List",
+    "tytul": "Peter's To-Do List",
     "typ": "Short",
     "saga": "Multiverse",
     "chronologia_index": 36,
@@ -500,6 +605,9 @@
     "poster_url": "assets/posters/mcu/peters_todo.jpg",
     "link_disney_plus": "link_do_dplus_peterstodo",
     "scena_ikoniczna_url": "assets/scenes/mcu/peters_todo_scene.jpg",
+    "rezyser": "Various",
+    "runtime": 2,
+    "ocena": null,
     "watched": false,
     "fave": false
   },
@@ -514,6 +622,9 @@
     "poster_url": "assets/posters/mcu/sm_farfromhome.jpg",
     "link_disney_plus": "https://www.netflix.com/watch/81055822?source=35",
     "scena_ikoniczna_url": "assets/scenes/mcu/smffh_scene.jpg",
+    "rezyser": "Jon Watts",
+    "runtime": 129,
+    "ocena": 90,
     "watched": false,
     "fave": false
   },
@@ -528,6 +639,9 @@
     "poster_url": "assets/posters/mcu/eternals.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-b042efa2-6650-48fd-bf35-ea285a5a5649",
     "scena_ikoniczna_url": "assets/scenes/mcu/eternals_scene.jpg",
+    "rezyser": "Chloé Zhao",
+    "runtime": 161,
+    "ocena": 47,
     "watched": false,
     "fave": false
   },
@@ -542,6 +656,9 @@
     "poster_url": "assets/posters/mcu/sm_nowayhome.jpg",
     "link_disney_plus": "https://www.primevideo.com/dp/amzn1.dv.gti.53065791-4335-46ce-bc1b-5c5ebbb21073?autoplay=0&ref_=atv_cf_strg_wb",
     "scena_ikoniczna_url": "assets/scenes/mcu/smnwh_scene.jpg",
+    "rezyser": "Jon Watts",
+    "runtime": 159,
+    "ocena": 90,
     "watched": false,
     "fave": false
   },
@@ -556,6 +673,9 @@
     "poster_url": "assets/posters/mcu/ds_2.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-2f51b691-b22a-42be-9c19-6bbabd2563e4",
     "scena_ikoniczna_url": "assets/scenes/mcu/ds_2_scene.jpg",
+    "rezyser": "Sam Raimi",
+    "runtime": 126,
+    "ocena": 74,
     "watched": false,
     "fave": false
   },
@@ -570,6 +690,9 @@
     "poster_url": "assets/posters/mcu/hawkeye_s1.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-128482e8-a9bc-4289-9c0d-83a975d823f3",
     "scena_ikoniczna_url": "assets/scenes/mcu/hawkeye_scene.jpg",
+    "rezyser": "Rhys Thomas, Bert Kenney",
+    "runtime": 250,
+    "ocena": null,
     "watched": false,
     "fave": false
   },
@@ -584,6 +707,9 @@
     "poster_url": "assets/posters/mcu/moonknight.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-330062c7-20c5-45e1-b6c5-e1e096055d75",
     "scena_ikoniczna_url": "assets/scenes/mcu/moonknight_scene.jpg",
+    "rezyser": "Mohamed Diab",
+    "runtime": 300,
+    "ocena": null,
     "watched": false,
     "fave": false
   },
@@ -598,6 +724,9 @@
     "poster_url": "assets/posters/mcu/bp_2.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-86e14fdb-3841-4282-ad38-07c8c4aab4b6",
     "scena_ikoniczna_url": "assets/scenes/mcu/bp_2_scene.jpg",
+    "rezyser": "Ryan Coogler",
+    "runtime": 161,
+    "ocena": 84,
     "watched": false,
     "fave": false
   },
@@ -612,6 +741,9 @@
     "poster_url": "assets/posters/mcu/echo.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-3c9aa47d-88c2-455b-a63b-4be76b666a55",
     "scena_ikoniczna_url": "assets/scenes/mcu/echo_scene.jpg",
+    "rezyser": "Sydney Freeland",
+    "runtime": 300,
+    "ocena": null,
     "watched": false,
     "fave": false
   },
@@ -626,6 +758,9 @@
     "poster_url": "assets/posters/mcu/shehulk.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-b1c3c897-b925-4236-88e4-1ceed3623a46",
     "scena_ikoniczna_url": "assets/scenes/mcu/shehulk_scene.jpg",
+    "rezyser": "Kat Coiro",
+    "runtime": 300,
+    "ocena": null,
     "watched": false,
     "fave": false
   },
@@ -640,6 +775,9 @@
     "poster_url": "assets/posters/mcu/msmarvel.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-7bf8d7e6-9739-4fee-86c0-f4afc48b152c",
     "scena_ikoniczna_url": "assets/scenes/mcu/msmarvel_scene.jpg",
+    "rezyser": "Meera Menon, Bilall Fallah, Adil El Arbi",
+    "runtime": 300,
+    "ocena": null,
     "watched": false,
     "fave": false
   },
@@ -654,6 +792,9 @@
     "poster_url": "assets/posters/mcu/thor_4.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-0007d7a0-2515-411e-9294-2de6a7b8d00e",
     "scena_ikoniczna_url": "assets/scenes/mcu/thor_4_scene.jpg",
+    "rezyser": "Taika Waititi",
+    "runtime": 119,
+    "ocena": 64,
     "watched": false,
     "fave": false
   },
@@ -668,6 +809,9 @@
     "poster_url": "assets/posters/mcu/ironheart.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-b2b50b9a-a055-4b31-a609-8ec46f3add98",
     "scena_ikoniczna_url": "assets/scenes/mcu/ironheart_scene.jpg",
+    "rezyser": "Nudie Jasnoff, Samuel Adewunmi",
+    "runtime": 300,
+    "ocena": null,
     "watched": false,
     "fave": false
   },
@@ -682,6 +826,9 @@
     "poster_url": "assets/posters/mcu/werewolf.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-ad2fd4e8-062b-45b9-b2c5-8b8779873e48",
     "scena_ikoniczna_url": "assets/scenes/mcu/werewolf_scene.jpg",
+    "rezyser": "Michael Giacchino",
+    "runtime": 52,
+    "ocena": null,
     "watched": false,
     "fave": false
   },
@@ -696,6 +843,9 @@
     "poster_url": "assets/posters/mcu/gotg_holiday.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-1a15fe60-3236-4242-a699-a4e3392cf112",
     "scena_ikoniczna_url": "assets/scenes/mcu/gotgholiday_scene.jpg",
+    "rezyser": "James Gunn",
+    "runtime": 42,
+    "ocena": null,
     "watched": false,
     "fave": false
   },
@@ -710,6 +860,9 @@
     "poster_url": "assets/posters/mcu/quantumania.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-eb1453f3-48aa-4af0-85f5-8ca4916c7415",
     "scena_ikoniczna_url": "assets/scenes/mcu/quantumania_scene.jpg",
+    "rezyser": "Peyton Reed",
+    "runtime": 125,
+    "ocena": 51,
     "watched": false,
     "fave": false
   },
@@ -724,6 +877,9 @@
     "poster_url": "assets/posters/mcu/gotg_3.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-820f0ded-3254-42c5-a7e4-7c044ff6dd65",
     "scena_ikoniczna_url": "assets/scenes/mcu/gotg_3_scene.jpg",
+    "rezyser": "James Gunn",
+    "runtime": 150,
+    "ocena": 92,
     "watched": false,
     "fave": false
   },
@@ -738,6 +894,9 @@
     "poster_url": "assets/posters/mcu/secret_invasion.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-4cfe6313-7f5e-4544-af84-d31bf718f65a",
     "scena_ikoniczna_url": "assets/scenes/mcu/secretinvasion_scene.jpg",
+    "rezyser": "Ali Selim",
+    "runtime": 300,
+    "ocena": null,
     "watched": false,
     "fave": false
   },
@@ -752,6 +911,9 @@
     "poster_url": "assets/posters/mcu/the_marvels.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-75c90eca-8969-4edb-ac1a-7165cff2671c",
     "scena_ikoniczna_url": "assets/scenes/mcu/marvels_scene.jpg",
+    "rezyser": "Nia DaCosta",
+    "runtime": 105,
+    "ocena": 59,
     "watched": false,
     "fave": false
   },
@@ -766,6 +928,9 @@
     "poster_url": "assets/posters/mcu/loki_s2.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-8f8c5cbb-e5ba-4285-9e2c-86abcac9fd50",
     "scena_ikoniczna_url": "assets/scenes/mcu/loki_s2_scene.jpg",
+    "rezyser": "Kate Herron",
+    "runtime": 300,
+    "ocena": null,
     "watched": false,
     "fave": false
   },
@@ -780,6 +945,9 @@
     "poster_url": "assets/posters/mcu/whatif_s2.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-fc588cfe-ff2b-4a44-abbd-d76359ce778f",
     "scena_ikoniczna_url": "assets/scenes/mcu/whatif_s2_scene.jpg",
+    "rezyser": "Multiple",
+    "runtime": 300,
+    "ocena": null,
     "watched": false,
     "fave": false
   },
@@ -794,6 +962,9 @@
     "poster_url": "assets/posters/mcu/deadpool_wolverine.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-120ae1e6-2240-4924-a4ce-f8de6e28b0b1",
     "scena_ikoniczna_url": "assets/scenes/mcu/deadpool_wolvie_scene.jpg",
+    "rezyser": "Shawn Levy",
+    "runtime": 128,
+    "ocena": 80,
     "watched": false,
     "fave": false
   },
@@ -808,6 +979,9 @@
     "poster_url": "assets/posters/mcu/agatha.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-5e474669-a4a2-4b90-a928-5ae7f845090c",
     "scena_ikoniczna_url": "assets/scenes/mcu/agatha_scene.jpg",
+    "rezyser": "Jac Schaeffer",
+    "runtime": 300,
+    "ocena": null,
     "watched": false,
     "fave": false
   },
@@ -822,6 +996,9 @@
     "poster_url": "assets/posters/mcu/whatif_s3.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-fc588cfe-ff2b-4a44-abbd-d76359ce778f",
     "scena_ikoniczna_url": "assets/scenes/mcu/whatif_s3_scene.jpg",
+    "rezyser": "Multiple",
+    "runtime": 300,
+    "ocena": null,
     "watched": false,
     "fave": false
   },
@@ -836,6 +1013,9 @@
     "poster_url": "assets/posters/mcu/spidey_yfn.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-b1417e49-48ad-4827-bfd6-94580ecbecd7",
     "scena_ikoniczna_url": "assets/scenes/mcu/spideyyfn_scene.jpg",
+    "rezyser": "Jeff Trammell",
+    "runtime": 300,
+    "ocena": null,
     "watched": false,
     "fave": false
   },
@@ -850,6 +1030,9 @@
     "poster_url": "assets/posters/mcu/daredevil_ba.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-85e7a914-c8e6-41db-95df-c740dc2cf1b7",
     "scena_ikoniczna_url": "assets/scenes/mcu/daredevilba_scene.jpg",
+    "rezyser": "Justin Benson, Aaron Moorhead",
+    "runtime": 300,
+    "ocena": null,
     "watched": false,
     "fave": false
   },
@@ -864,6 +1047,9 @@
     "poster_url": "assets/posters/mcu/cap_4.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-3064ac7f-ef4d-4f89-b92f-b5524da92a72",
     "scena_ikoniczna_url": "assets/scenes/mcu/cap_4_scene.jpg",
+    "rezyser": "Julius Onah",
+    "runtime": 124,
+    "ocena": 56,
     "watched": false,
     "fave": false
   },
@@ -878,6 +1064,9 @@
     "poster_url": "assets/posters/mcu/thunderbolts.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-f51dce23-7d8f-490a-9f0c-be1b5432c2a9",
     "scena_ikoniczna_url": "assets/scenes/mcu/thunderbolts_scene.jpg",
+    "rezyser": "Jake Schreier",
+    "runtime": 120,
+    "ocena": 88,
     "watched": false,
     "fave": false
   },
@@ -892,6 +1081,9 @@
     "poster_url": "assets/posters/mcu/ff_1.jpg",
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-2142a7a9-4c49-438d-a492-296c4e08b714",
     "scena_ikoniczna_url": "assets/scenes/mcu/ff_1_scene.jpg",
+    "rezyser": "Matt Shakman",
+    "runtime": 145,
+    "ocena": null,
     "watched": false,
     "fave": false
   }
