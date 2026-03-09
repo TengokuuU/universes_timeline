@@ -154,4 +154,20 @@ export class App implements OnInit {
       this.currentLayer = 1;
     }
   }
+  currentVisiblePhase: string = "";
+
+onTimelineScroll(event: any) {
+  const container = event.target;
+  // Prosta logika: znajdujemy elementy wewnątrz i sprawdzamy ich pozycję
+  const items = container.querySelectorAll('.timeline-item');
+  
+  for (let el of items) {
+    const rect = el.getBoundingClientRect();
+    if (rect.left > 0 && rect.left < window.innerWidth / 2) {
+      // Tutaj musiałbyś mieć ID lub atrybut data-saga na elemencie
+      this.currentVisiblePhase = el.getAttribute('data-saga') || "";
+      break;
+    }
+  }
+}
 }

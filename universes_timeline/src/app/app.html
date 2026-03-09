@@ -26,135 +26,128 @@
 </div>
 
 <!-- TIMELINE -->
-<div class="timeline-wrapper" #timelineWrapper [ngClass]="currentTheme">
+<div class="current-phase-indicator" *ngIf="currentVisiblePhase">
+  {{ currentVisiblePhase }} SAGA
+</div>
+
+<div class="timeline-wrapper" #timelineWrapper [ngClass]="currentTheme" (scroll)="onTimelineScroll($event)">
   <div class="timeline-track" #timeline>
     <div class="timeline-axis">
       <div class="main-line"></div>
       <div class="progress-line" [style.width.%]="45"></div>
     </div>
-    <!-- TIMELINE ELEMENT, GENERATE FROM JSON FILE -->
-    @for (item of mcuItems; track item.id; let i = $index)
-    {
-    <div class="timeline-item" [class.bottom]="i % 2 !== 0">
 
-      <div class="timeline-dot"></div>
+    @for (item of mcuItems; track item.id; let i = $index) {
+      
+      @if (i === 0 || item.saga !== mcuItems[i-1].saga) {
+        <div class="phase-divider">
+          <div class="phase-marker"></div>
+          <span class="phase-label">{{ item.saga }}</span>
+        </div>
+      }
 
-      <div class="card-anchor">
+      <div class="timeline-item" 
+           [id]="'item-' + item.id" 
+           [attr.data-saga]="item.saga" 
+           [class.bottom]="i % 2 !== 0">
 
-        <!-- ENTIRE CARD -->
-        <div class="mcu-card" (mouseenter)="setHoverBg(item)" (mouseleave)="setHoverBg(null)">
-          <div class="poster-wrapper">
-            <img [src]="item.poster_url" class="poster-img" [alt]="item.tytul" (click)="toggleWatched(item, $event)">
-            <div class="watched-overlay" *ngIf="item.watched">
-              <span class="check-icon">✔</span>
+        <div class="timeline-dot"></div>
+
+        <div class="card-anchor">
+          <div class="mcu-card" (mouseenter)="setHoverBg(item)" (mouseleave)="setHoverBg(null)">
+            <div class="poster-wrapper">
+              <img [src]="item.poster_url" class="poster-img" [alt]="item.tytul" (click)="toggleWatched(item, $event)">
+              <div class="watched-overlay" *ngIf="item.watched">
+                <span class="check-icon">✔</span>
+              </div>
+            </div>
+
+            <div class="details-box">
+              <h3>{{ item.tytul }}</h3>
+              <p class="description">{{ item.opis_krotki }}</p>
+              <p class="release-date">Data wydania: {{ item.data_premiery }}</p>
+              <p class="display-details" (click)="toggleFullDetails(item)">Więcej informacji...</p>
+
+              @if(item.id == 36) {
+                <p class="sadge">Short aktualnie niedostępny.</p>
+              } @else {
+                <a [href]="item.link_disney_plus" target="_blank" class="dplus-link">
+                  <div class="tooltip">
+                    @if(item.id == 25 || item.id == 37) {
+                      <img src="assets/misc/ntflx.svg" alt="Netflix" width="60">
+                    } @else if(item.id == 39) {
+                      <img src="assets/misc/amzn.svg" alt="Amazon Prime" width="60">
+                    } @else if(item.id >= 201) {
+                      <img src="assets/misc/stm.svg" alt="Steam" width="60">
+                    } @else {
+                      <img src="assets/misc/dsnplus.svg" alt="Disney+" width="60">
+                    }
+                    <span class="tooltip-text">Otwórz</span>
+                  </div>
+                </a>
+              }
+
+              <span class="heart-icon" (click)="toggleFave(item, $event)">
+                {{ item.fave ? '❤️' : '♡' }}
+              </span>
             </div>
           </div>
-          <!-- AFTER HOVER ELEMENT WITH DETAILS -->
-          <div class="details-box">
-            <h3>{{ item.tytul }}</h3>
-            <p class="description">{{ item.opis_krotki }}</p>
-            <p class="release-date">Data wydania: {{ item.data_premiery }}</p>
-            <p class="display-details" (click)="toggleFullDetails(item)">Więcej informacji...</p>
-            <!-- LINKING TO SITES -->
-            @if(item.id == 36)
-            {
-            <p class="sadge">Short aktualnie niedostępny na Disney+.</p>
-            }
-            @else
-            {
-            <a [href]="item.link_disney_plus" target="_blank" class="dplus-link">
-              <div class="tooltip">
-                @if(item.id == 25 || item.id == 37)
-                {
-                <img src="assets/misc/ntflx.svg" alt="Netflix" width="60">
-                }
-                @else if(item.id == 39)
-                {
-                <img src="assets/misc/amzn.svg" alt="Amazon Prime" width="60">
-                <span class="tooltip-text">Link do filmu</span>
-                }
-                @else if(item.id >= 201 && item.id <= 211) { <img src="assets/misc/stm.svg" alt="Steam" width="60">
-                  <span class="tooltip-text">Link do gry</span>
-                  }
-                  @else
-                  {
-                  <img src="assets/misc/dsnplus.svg" alt="Disney+" width="60">
-                  <span class="tooltip-text">Link do filmu</span>
-                  }
-              </div>
-            </a>
-            }
-            @if(item.fave)
-            {
-            <span class="heart-icon" (click)="toggleFave(item, $event)">❤️</span>
-            }
-            @else
-            {
-            <span class="heart-icon" (click)="toggleFave(item, $event)">♡</span>
-            }
-          </div>
         </div>
-      </div>
-    </div>
-    }
-  </div>
-</div>
-<div class="full-details-overlay" *ngIf="isModalOpen" (click)="toggleFullDetails(null)">
-  <div class="full-details-modal" (click)="$event.stopPropagation()">
-    <span class="close-modal" (click)="toggleFullDetails(null)">&times;</span>
+      </div> } </div>
+</div>  <div class="full-details-overlay" *ngIf="isModalOpen" (click)="toggleFullDetails(null)">
+    <div class="full-details-modal" (click)="$event.stopPropagation()">
+      <span class="close-modal" (click)="toggleFullDetails(null)">&times;</span>
 
-    <div class="modal-content-placeholder">
-      <div class="modal-header">
-        <div class="logo-placeholder">LOGO FILMU</div>
-      </div>
+      <div class="modal-content-placeholder">
+        <img [src]="selectedItem?.logo_url" [alt]="selectedItem?.tytul">
 
-      <div class="modal-body">
-        <div class="info-grid">
-          <div class="info-item">
-            <span class="label">Reżyser:</span>
-            <span class="value"> {{ selectedItem?.rezyser }} </span>
-          </div>
-          <div class="info-item">
-            @if(selectedItem?.typ == 'Serial')
-            {
-            <span class="label">Czas trwania:</span>
-            <span class="value">{{selectedItem?.runtime}} min per odcinek</span>
-            }
-            @else if(selectedItem?.typ == 'Film' || selectedItem?.typ == 'Short')
-            {
-            <span class="label">Czas trwania:</span>
-            <span class="value">{{ selectedItem?.runtime }} min</span>
-            }
-            @else
-            {
-            <span class="label">Długość gry:</span>
-            <span class="value"> {{ selectedItem?.runtime }}</span>
-            }
-          </div>
-          <div class="info-item">
-            @if(selectedItem?.typ == 'Serial' || selectedItem?.typ == 'Film')
-            {
-            <span class="label">Ocena:</span>
-            <span class="value"> {{ selectedItem?.ocena }}% tomato score </span>
-            }
-            @else if(selectedItem?.id == 36)
-            {
-            <span class="label">Ocena:</span>
-            <span class="value">{{ selectedItem?.ocena }}</span>
-            }
-            @else if(selectedItem?.typ == "Short")
-            {
-            <span class="label">Ocena:</span>
-            <span class="value"> {{ selectedItem?.ocena }}% audience score </span>
-            }
-            @else
-            {
-            <span class="label">Ocena:</span>
-            <span class="value"> {{ selectedItem?.ocena }}</span>
-            }
+        <div class="modal-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <span class="label">Reżyser:</span>
+              <span class="value"> {{ selectedItem?.rezyser }} </span>
+            </div>
+            <div class="info-item">
+              @if(selectedItem?.typ == 'Serial')
+              {
+              <span class="label">Czas trwania:</span>
+              <span class="value">{{selectedItem?.runtime}} min per odcinek</span>
+              }
+              @else if(selectedItem?.typ == 'Film' || selectedItem?.typ == 'Short')
+              {
+              <span class="label">Czas trwania:</span>
+              <span class="value">{{ selectedItem?.runtime }} min</span>
+              }
+              @else
+              {
+              <span class="label">Długość gry:</span>
+              <span class="value"> {{ selectedItem?.runtime }}</span>
+              }
+            </div>
+            <div class="info-item">
+              @if(selectedItem?.typ == 'Serial' || selectedItem?.typ == 'Film')
+              {
+              <span class="label">Ocena:</span>
+              <span class="value"> {{ selectedItem?.ocena }}% tomato score </span>
+              }
+              @else if(selectedItem?.id == 36)
+              {
+              <span class="label">Ocena:</span>
+              <span class="value">{{ selectedItem?.ocena }}</span>
+              }
+              @else if(selectedItem?.typ == "Short")
+              {
+              <span class="label">Ocena:</span>
+              <span class="value"> {{ selectedItem?.ocena }}% audience score </span>
+              }
+              @else
+              {
+              <span class="label">Ocena:</span>
+              <span class="value"> {{ selectedItem?.ocena }}</span>
+              }
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>

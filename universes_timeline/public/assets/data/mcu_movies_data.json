@@ -14,7 +14,8 @@
     "runtime": 124,
     "ocena": 80,
     "watched": false,
-    "fave": false
+    "fave": false,
+    "logo_url": "assets/logos/mcu/cap_1_logo.png"
   },
   {
     "id": 2,

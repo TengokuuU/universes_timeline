@@ -14,4 +14,5 @@ export interface MCUItem {
   rezyser?: string;
   runtime?: number;
   ocena?: string;
+  logo_url: string;
 }
