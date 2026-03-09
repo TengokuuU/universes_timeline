@@ -588,6 +588,10 @@ body {
   padding: 20px;
 }
 
+.modal-logo
+{
+  max-width: 100%;
+}
 .modal-tip {
   font-style: italic;
   opacity: 0.6;
