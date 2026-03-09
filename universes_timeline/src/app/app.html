@@ -20,7 +20,7 @@
     <div class="side-menu-footer">
       <p>TengokuuU</p>
       <span class="ai-badge">Built with AI support</span>
-    <span class="copyright">&copy; 2026 | All Rights Reserved</span>
+      <span class="copyright">&copy; 2026 | All Rights Reserved</span>
     </div>
   </nav>
 </div>
@@ -33,7 +33,7 @@
       <div class="progress-line" [style.width.%]="45"></div>
     </div>
     <!-- TIMELINE ELEMENT, GENERATE FROM JSON FILE -->
-    @for (item of mcuItems; track item.id; let i = $index) 
+    @for (item of mcuItems; track item.id; let i = $index)
     {
     <div class="timeline-item" [class.bottom]="i % 2 !== 0">
 
@@ -86,11 +86,11 @@
             }
             @if(item.fave)
             {
-                <span class="heart-icon" (click)="toggleFave(item, $event)">❤️</span>
+            <span class="heart-icon" (click)="toggleFave(item, $event)">❤️</span>
             }
             @else
             {
-                <span class="heart-icon" (click)="toggleFave(item, $event)">♡</span>
+            <span class="heart-icon" (click)="toggleFave(item, $event)">♡</span>
             }
           </div>
         </div>
@@ -100,41 +100,61 @@
   </div>
 </div>
 <div class="full-details-overlay" *ngIf="isModalOpen" (click)="toggleFullDetails(null)">
-    <div class="full-details-modal" (click)="$event.stopPropagation()">
-      <span class="close-modal" (click)="toggleFullDetails(null)">&times;</span>
-      
-      <div class="modal-content-placeholder">
-        <div class="modal-header">
-          <div class="logo-placeholder">LOGO FILMU</div>
-        </div>
-        
-        <div class="modal-body">
-          <div class="info-grid">
-            <div class="info-item">
-              <span class="label">Reżyser:</span>
-              <span class="value"> {{ selectedItem?.rezyser }} </span>
-            </div>
-            <div class="info-item">
-              <span class="label">Czas trwania:</span>
-              @if(selectedItem?.typ == 'Serial')
-              {
-                <span class="value">{{selectedItem?.runtime}} min per odcinek</span>
-              }
-              @else if(selectedItem?.typ == 'Film')
-              {
-                <span class="value">{{ selectedItem?.runtime }} min</span>
-              }
-              @else
-              {
-                <span class="value"> {{ selectedItem?.runtime }} min</span>
-              }
-              </div>
-            <div class="info-item">
-              <span class="label">Ocena:</span>
-              <span class="value"> {{ selectedItem?.ocena }}% tomato score  </span>
-            </div>
+  <div class="full-details-modal" (click)="$event.stopPropagation()">
+    <span class="close-modal" (click)="toggleFullDetails(null)">&times;</span>
+
+    <div class="modal-content-placeholder">
+      <div class="modal-header">
+        <div class="logo-placeholder">LOGO FILMU</div>
+      </div>
+
+      <div class="modal-body">
+        <div class="info-grid">
+          <div class="info-item">
+            <span class="label">Reżyser:</span>
+            <span class="value"> {{ selectedItem?.rezyser }} </span>
+          </div>
+          <div class="info-item">
+            @if(selectedItem?.typ == 'Serial')
+            {
+            <span class="label">Czas trwania:</span>
+            <span class="value">{{selectedItem?.runtime}} min per odcinek</span>
+            }
+            @else if(selectedItem?.typ == 'Film' || selectedItem?.typ == 'Short')
+            {
+            <span class="label">Czas trwania:</span>
+            <span class="value">{{ selectedItem?.runtime }} min</span>
+            }
+            @else
+            {
+            <span class="label">Długość gry:</span>
+            <span class="value"> {{ selectedItem?.runtime }}</span>
+            }
+          </div>
+          <div class="info-item">
+            @if(selectedItem?.typ == 'Serial' || selectedItem?.typ == 'Film')
+            {
+            <span class="label">Ocena:</span>
+            <span class="value"> {{ selectedItem?.ocena }}% tomato score </span>
+            }
+            @else if(selectedItem?.id == 36)
+            {
+            <span class="label">Ocena:</span>
+            <span class="value">{{ selectedItem?.ocena }}</span>
+            }
+            @else if(selectedItem?.typ == "Short")
+            {
+            <span class="label">Ocena:</span>
+            <span class="value"> {{ selectedItem?.ocena }}% audience score </span>
+            }
+            @else
+            {
+            <span class="label">Ocena:</span>
+            <span class="value"> {{ selectedItem?.ocena }}</span>
+            }
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>

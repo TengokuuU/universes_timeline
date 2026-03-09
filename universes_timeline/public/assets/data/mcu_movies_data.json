@@ -29,7 +29,7 @@
     "scena_ikoniczna_url": "assets/scenes/mcu/carter_short_scene.jpg",
     "rezyser": "Louis D'Esposito",
     "runtime": 4,
-    "ocena": null,
+    "ocena": 87,
     "watched": false,
     "fave": false
   },
@@ -114,7 +114,7 @@
     "scena_ikoniczna_url": "assets/scenes/mcu/thor_hammer_scene.jpg",
     "rezyser": "Joss Whedon",
     "runtime": 4,
-    "ocena": null,
+    "ocena": 77,
     "watched": false,
     "fave": false
   },
@@ -148,7 +148,7 @@
     "scena_ikoniczna_url": "assets/scenes/mcu/consultant_scene.jpg",
     "rezyser": "Leythum Waddell",
     "runtime": 3,
-    "ocena": null,
+    "ocena": 71,
     "watched": false,
     "fave": false
   },
@@ -182,7 +182,7 @@
     "scena_ikoniczna_url": "assets/scenes/mcu/item47_scene.jpg",
     "rezyser": "Jon Favreau",
     "runtime": 3,
-    "ocena": null,
+    "ocena": 80,
     "watched": false,
     "fave": false
   },
@@ -233,7 +233,7 @@
     "scena_ikoniczna_url": "assets/scenes/mcu/all_hail_scene.jpg",
     "rezyser": "Drew Pearce",
     "runtime": 5,
-    "ocena": null,
+    "ocena": 60,
     "watched": false,
     "fave": false
   },
@@ -284,7 +284,7 @@
     "scena_ikoniczna_url": "assets/scenes/mcu/groot_s1e1_scene.jpg",
     "rezyser": "Multiple",
     "runtime": 4,
-    "ocena": null,
+    "ocena": 89,
     "watched": false,
     "fave": false
   },
@@ -318,7 +318,7 @@
     "scena_ikoniczna_url": "assets/scenes/mcu/groot_s2_scene.jpg",
     "rezyser": "Multiple",
     "runtime": 16,
-    "ocena": null,
+    "ocena": "89% & 77",
     "watched": false,
     "fave": false
   },
@@ -522,7 +522,7 @@
     "scena_ikoniczna_url": "assets/scenes/mcu/loki_s1_scene.jpg",
     "rezyser": "Kate Herron",
     "runtime": 50,
-    "ocena": null,
+    "ocena": 92,
     "watched": false,
     "fave": false
   },
@@ -538,8 +538,8 @@
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-fc588cfe-ff2b-4a44-abbd-d76359ce778f",
     "scena_ikoniczna_url": "assets/scenes/mcu/whatif_s1_scene.jpg",
     "rezyser": "Multiple",
-    "runtime": 300,
-    "ocena": null,
+    "runtime": "30-35",
+    "ocena": 89,
     "watched": false,
     "fave": false
   },
@@ -555,8 +555,8 @@
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-90affd1f-0851-48bc-9cab-c142d5c9c20c",
     "scena_ikoniczna_url": "assets/scenes/mcu/wandavision_scene.jpg",
     "rezyser": "Matt Shakman",
-    "runtime": 300,
-    "ocena": null,
+    "runtime": "30-50",
+    "ocena": 92,
     "watched": false,
     "fave": false
   },
@@ -589,8 +589,8 @@
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-3c08a31a-2350-4aaf-90d0-88def4c551bf",
     "scena_ikoniczna_url": "assets/scenes/mcu/fatws_scene.jpg",
     "rezyser": "Kari Skogland",
-    "runtime": 300,
-    "ocena": null,
+    "runtime": "45-60",
+    "ocena": 85,
     "watched": false,
     "fave": false
   },
@@ -607,7 +607,7 @@
     "scena_ikoniczna_url": "assets/scenes/mcu/peters_todo_scene.jpg",
     "rezyser": "Various",
     "runtime": 2,
-    "ocena": null,
+    "ocena": "7/10 IMDb rating",
     "watched": false,
     "fave": false
   },
@@ -691,8 +691,8 @@
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-128482e8-a9bc-4289-9c0d-83a975d823f3",
     "scena_ikoniczna_url": "assets/scenes/mcu/hawkeye_scene.jpg",
     "rezyser": "Rhys Thomas, Bert Kenney",
-    "runtime": 250,
-    "ocena": null,
+    "runtime": "40-50",
+    "ocena": 92,
     "watched": false,
     "fave": false
   },
@@ -708,8 +708,8 @@
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-330062c7-20c5-45e1-b6c5-e1e096055d75",
     "scena_ikoniczna_url": "assets/scenes/mcu/moonknight_scene.jpg",
     "rezyser": "Mohamed Diab",
-    "runtime": 300,
-    "ocena": null,
+    "runtime": 50,
+    "ocena": 87,
     "watched": false,
     "fave": false
   },
@@ -742,8 +742,8 @@
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-3c9aa47d-88c2-455b-a63b-4be76b666a55",
     "scena_ikoniczna_url": "assets/scenes/mcu/echo_scene.jpg",
     "rezyser": "Sydney Freeland",
-    "runtime": 300,
-    "ocena": null,
+    "runtime": "35-45",
+    "ocena": 70,
     "watched": false,
     "fave": false
   },
@@ -759,8 +759,8 @@
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-b1c3c897-b925-4236-88e4-1ceed3623a46",
     "scena_ikoniczna_url": "assets/scenes/mcu/shehulk_scene.jpg",
     "rezyser": "Kat Coiro",
-    "runtime": 300,
-    "ocena": null,
+    "runtime": "25-35",
+    "ocena": 80,
     "watched": false,
     "fave": false
   },
@@ -776,8 +776,8 @@
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-7bf8d7e6-9739-4fee-86c0-f4afc48b152c",
     "scena_ikoniczna_url": "assets/scenes/mcu/msmarvel_scene.jpg",
     "rezyser": "Meera Menon, Bilall Fallah, Adil El Arbi",
-    "runtime": 300,
-    "ocena": null,
+    "runtime": "40-50",
+    "ocena": 98,
     "watched": false,
     "fave": false
   },
@@ -810,8 +810,8 @@
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-b2b50b9a-a055-4b31-a609-8ec46f3add98",
     "scena_ikoniczna_url": "assets/scenes/mcu/ironheart_scene.jpg",
     "rezyser": "Nudie Jasnoff, Samuel Adewunmi",
-    "runtime": 300,
-    "ocena": null,
+    "runtime": "40-55",
+    "ocena": 76,
     "watched": false,
     "fave": false
   },
@@ -828,7 +828,7 @@
     "scena_ikoniczna_url": "assets/scenes/mcu/werewolf_scene.jpg",
     "rezyser": "Michael Giacchino",
     "runtime": 52,
-    "ocena": null,
+    "ocena": 90,
     "watched": false,
     "fave": false
   },
@@ -845,7 +845,7 @@
     "scena_ikoniczna_url": "assets/scenes/mcu/gotgholiday_scene.jpg",
     "rezyser": "James Gunn",
     "runtime": 42,
-    "ocena": null,
+    "ocena": 93,
     "watched": false,
     "fave": false
   },
@@ -895,8 +895,8 @@
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-4cfe6313-7f5e-4544-af84-d31bf718f65a",
     "scena_ikoniczna_url": "assets/scenes/mcu/secretinvasion_scene.jpg",
     "rezyser": "Ali Selim",
-    "runtime": 300,
-    "ocena": null,
+    "runtime": "30-55",
+    "ocena": 53,
     "watched": false,
     "fave": false
   },
@@ -929,8 +929,8 @@
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-8f8c5cbb-e5ba-4285-9e2c-86abcac9fd50",
     "scena_ikoniczna_url": "assets/scenes/mcu/loki_s2_scene.jpg",
     "rezyser": "Kate Herron",
-    "runtime": 300,
-    "ocena": null,
+    "runtime": "45-55",
+    "ocena": 85,
     "watched": false,
     "fave": false
   },
@@ -946,8 +946,8 @@
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-fc588cfe-ff2b-4a44-abbd-d76359ce778f",
     "scena_ikoniczna_url": "assets/scenes/mcu/whatif_s2_scene.jpg",
     "rezyser": "Multiple",
-    "runtime": 300,
-    "ocena": null,
+    "runtime": "30-35",
+    "ocena": 88,
     "watched": false,
     "fave": false
   },
@@ -980,8 +980,8 @@
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-5e474669-a4a2-4b90-a928-5ae7f845090c",
     "scena_ikoniczna_url": "assets/scenes/mcu/agatha_scene.jpg",
     "rezyser": "Jac Schaeffer",
-    "runtime": 300,
-    "ocena": null,
+    "runtime": "35-50",
+    "ocena": 84,
     "watched": false,
     "fave": false
   },
@@ -997,8 +997,8 @@
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-fc588cfe-ff2b-4a44-abbd-d76359ce778f",
     "scena_ikoniczna_url": "assets/scenes/mcu/whatif_s3_scene.jpg",
     "rezyser": "Multiple",
-    "runtime": 300,
-    "ocena": null,
+    "runtime": 30,
+    "ocena": 80,
     "watched": false,
     "fave": false
   },
@@ -1014,8 +1014,8 @@
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-b1417e49-48ad-4827-bfd6-94580ecbecd7",
     "scena_ikoniczna_url": "assets/scenes/mcu/spideyyfn_scene.jpg",
     "rezyser": "Jeff Trammell",
-    "runtime": 300,
-    "ocena": null,
+    "runtime": 30,
+    "ocena": 97,
     "watched": false,
     "fave": false
   },
@@ -1031,8 +1031,8 @@
     "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-85e7a914-c8e6-41db-95df-c740dc2cf1b7",
     "scena_ikoniczna_url": "assets/scenes/mcu/daredevilba_scene.jpg",
     "rezyser": "Justin Benson, Aaron Moorhead",
-    "runtime": 300,
-    "ocena": null,
+    "runtime": "40-60",
+    "ocena": 85,
     "watched": false,
     "fave": false
   },
@@ -1083,7 +1083,7 @@
     "scena_ikoniczna_url": "assets/scenes/mcu/ff_1_scene.jpg",
     "rezyser": "Matt Shakman",
     "runtime": 145,
-    "ocena": null,
+    "ocena": 88,
     "watched": false,
     "fave": false
   }
