@@ -68,7 +68,8 @@
     "runtime": 126,
     "ocena": 94,
     "watched": false,
-    "fave": false
+    "fave": false,
+    "logo_url": "assets/logos/mcu/iron_man_1_logo.png"
   },
   {
     "id": 5,
@@ -85,7 +86,8 @@
     "runtime": 124,
     "ocena": 57,
     "watched": false,
-    "fave": false
+    "fave": false,
+    "logo_url": "assets/logos/mcu/iron_man_2_logo.png"
   },
   {
     "id": 6,
@@ -102,7 +104,8 @@
     "runtime": 112,
     "ocena": 67,
     "watched": false,
-    "fave": false
+    "fave": false,
+    "logo_url": "assets/logos/mcu/hulk_logo.png"
   },
   {
     "id": 7,
@@ -119,7 +122,8 @@
     "runtime": 4,
     "ocena": 77,
     "watched": false,
-    "fave": false
+    "fave": false,
+    "logo_url": "assets/logos/mcu/thor_hammer_logo.png"
   },
   {
     "id": 8,
